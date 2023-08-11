@@ -35,9 +35,14 @@ h3{
     color: var(--pri-color);
 }
 
-.Container-light{
+.background-light{
+    background-image: linear-gradient(rgb(247, 243, 225),var(--pri-color));
+}
+
+.background-gray{
     background-color: #fafafa;
     padding-top: 3.5rem;
+    background-image:url("imagens/background-gray.jpg");
 }
 
 .Container-fixed{
@@ -71,10 +76,11 @@ h3{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0 0;
+    padding: 0;
+    margin: 0;
     border-bottom: 1px solid var(--pri-color);
     border-top: 1px solid var(--pri-color);
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.749);
 }
 
 .top-nav a{
@@ -82,7 +88,7 @@ h3{
     text-decoration: none;
     padding: .75em 1.15em;
     border: solid 1px;
-    
+    margin-right: 1rem;
 }
 .top-nav a:hover{
     background-color:var(--pri-color);
@@ -95,8 +101,10 @@ h3{
 }
 
 .Container-banner{
-    /* background-image: linear-gradient(rgb(247, 243, 225),var(--pri-color)); */
-    background-color: var(--pri-color)
+   background-image: linear-gradient(rgb(221, 203, 122),var(--pri-color));
+   border-radius: 5px;
+   /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.471); */
+    /* background-color: var(--pri-color) */
 }
 
 .banner{
@@ -125,7 +133,7 @@ h3{
 
 .cards{
     /* background-color: rgba(186, 182, 182, 0.736); */
-    background-image: linear-gradient(rgb(247, 243, 225),var(--pri-color));
+    
     display:flex;    
     flex-wrap: wrap;
     margin: 0;
